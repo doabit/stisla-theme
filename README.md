@@ -8,7 +8,7 @@ yarn add @doabit/stisla-theme
 
 ```scss
 @import '~@doabit/stisla-theme/src/scss/style';
-@import '~@doabit/stisla-theme/src/scss/componnents';
+@import '~@doabit/stisla-theme/src/scss/components';
 ```
 
 ## Customization

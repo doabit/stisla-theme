@@ -3,12 +3,19 @@
   @include main-sidebar;
   left: 0;
 }
-
 .main-sidebar,
 .navbar,
 .main-content,
 .main-footer {
-  transition: all .5s;
+  transition: all 0.5s;
+}
+.sidebar-collapse {
+  .main-sidebar,
+  .navbar,
+  .main-content,
+  .main-footer {
+    transition: none;
+  }
 }
 
 body.sidebar-gone {
@@ -68,7 +75,11 @@ body.sidebar-mini {
           height: 45px;
           padding: 0;
           justify-content: center;
-          .ion, .fas, .far, .fab, .fal {
+          .ion,
+          .fas,
+          .far,
+          .fab,
+          .fal {
             margin: 0;
             font-size: 20px;
           }
@@ -144,7 +155,8 @@ body.sidebar-mini {
   .navbar {
     left: 65px;
   }
-  .main-content, .main-footer {
+  .main-content,
+  .main-footer {
     padding-left: 90px;
   }
 }
@@ -265,7 +277,7 @@ body.layout-3 {
         > .nav-link {
           color: color_lighten(font, 10%);
           font-size: 13px;
-          letter-spacing: .3px;
+          letter-spacing: 0.3px;
           height: 70px;
           padding: 0;
           padding-left: 0 !important;
@@ -288,7 +300,7 @@ body.layout-3 {
             bottom: 0;
             height: 2px;
             background-color: color(primary);
-            transition: all .5s;
+            transition: all 0.5s;
           }
           span {
             line-height: 74px;
@@ -307,7 +319,7 @@ body.layout-3 {
             .nav-link {
               color: color(font);
               font-weight: 600;
-              letter-spacing: .3px;
+              letter-spacing: 0.3px;
               padding: 7px !important;
               padding-left: 20px !important;
               padding-right: 20px !important;
@@ -405,7 +417,7 @@ body.layout-3 {
         height: 50px;
         padding: 0 20px;
         width: 100%;
-        letter-spacing: .3px;
+        letter-spacing: 0.3px;
         color: color_lighten(font, 5%);
         text-decoration: none;
         .badge {
@@ -629,7 +641,8 @@ body:not(.sidebar-mini) .sidebar-style-2 {
     &.sidebar-show {
       overflow: hidden;
     }
-    &.search-show:before, &.sidebar-show:before {
+    &.search-show:before,
+    &.sidebar-show:before {
       content: '';
       position: fixed;
       left: 0;
@@ -640,20 +653,20 @@ body:not(.sidebar-mini) .sidebar-style-2 {
       opacity: 0;
       z-index: 891;
       -webkit-animation-name: fadeinbackdrop;
-              animation-name: fadeinbackdrop;
+      animation-name: fadeinbackdrop;
       -webkit-animation-duration: 1s;
-              animation-duration: 1s;
+      animation-duration: 1s;
       -webkit-animation-fill-mode: forwards;
-              animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
     }
     @-webkit-keyframes fadeinbackdrop {
       to {
-        opacity: .6;
+        opacity: 0.6;
       }
     }
     @keyframes fadeinbackdrop {
       to {
-        opacity: .6;
+        opacity: 0.6;
       }
     }
   }
