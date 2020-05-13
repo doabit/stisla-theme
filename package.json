@@ -1,0 +1,27 @@
+{
+  "name": "@doabit/stisla-theme",
+  "version": "1.0.0",
+  "description": "Stisla bootstrap theme.",
+  "main": "index.js",
+  "scripts": {
+    "copy-scss": "cpy ./scss/**/*.scss ../../src --parents --cwd ./stisla/sources",
+    "copy-js": "cpy ./js/*.js ../../dist --parents --cwd ./stisla/assets",
+    "compile": "node-sass ./src/scss -o ./dist/css",
+    "build": "npm run copy-scss && npm run copy-js && npm run compile",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/doabit/stisla-theme.git"
+  },
+  "author": "Doabit <doinsist@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/doabit/stisla-theme/issues"
+  },
+  "homepage": "https://github.com/doabit/stisla-theme#readme",
+  "dependencies": {
+    "cpy-cli": "^3.1.1",
+    "node-sass": "^4.14.1"
+  }
+}

@@ -1,0 +1,48 @@
+@import './colors';
+
+$colors: (
+  primary: $primaryColor,
+  secondary: $secondaryColor,
+  success: $successColor,
+  info: $infoColor,
+  warning: $warningColor,
+  danger: $dangerColor,
+  light: $lightColor,
+  grey: $greyColor,
+  whitesmoke: $whitesmokeColor,
+  dark: $darkColor,
+  muted: $mutedColor,
+  body: $bodyColor,
+  font: $fontColor,
+  fontdark: $fontdarkColor,
+  white: $whiteColor,
+  // Form Control
+    formcontrol_normal_background: $formcontrolNormalBackgroundColor,
+  formcontrol_normal_border: $formcontrolNormalBorderColor,
+  formcontrol_focus_background: $formcontrolFocusBackgroundColor,
+  formcontrol_focus_border: $formcontrolFocusBorderColor,
+  // Utilities
+    section_title_line: $sectionTitleLineColor
+);
+
+$font_family: 'Nunito', 'Segoe UI', arial !default;
+$font_weight: 400 !default;
+$font_size: 14px !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+// custom shadow
+$shadowLightenSize: 0 2px 6px !default;
+$iconShadowSize: 0 4px 8px !default;
+
+// font url
+$fontUrl: '//fonts.googleapis.com/css?family=Nunito:400,600,700,800' !default;
+
+// pagination
+$paginationLinkLightPercent: 31.7% !default;
